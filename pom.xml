@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>dev.hse</groupId>
-    <artifactId>template-loader-ms</artifactId>
+    <artifactId>cryptocurrency-loader-ms</artifactId>
     <version>1.0.0</version>
 
     <properties>

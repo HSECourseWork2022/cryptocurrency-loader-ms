@@ -1,12 +1,12 @@
-package dev.hse.template;
+package dev.hse.loader;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TemplateLoaderApplication {
+public class CryptocurrencyLoaderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TemplateLoaderApplication.class, args);
+        SpringApplication.run(CryptocurrencyLoaderApplication.class, args);
     }
 }

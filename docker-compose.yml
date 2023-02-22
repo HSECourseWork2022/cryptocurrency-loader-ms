@@ -5,7 +5,7 @@ networks:
     driver: bridge
 services:
   template-loader:
-    container_name: template-loader-container
+    container_name: cryptocurrency-loader-container
     build:
       dockerfile: Dockerfile
       context: .
@@ -13,11 +13,11 @@ services:
       - app-tier
     environment:
       - SPRING_KAFKA_BOOTSTRAP-SERVERS=kafka:9092
-      - SPRING_KAFKA_CONSUMER_GROUP-ID=template-loaders
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-container:5432/template
+      - SPRING_KAFKA_CONSUMER_GROUP-ID=cryptocurrency-loaders
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-container:5432/cryptocurrency
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=postgres
-      - LOADER_SUBTHEME=template
+      - LOADER_SUBTHEME=cryptocurrency
     depends_on:
       - kafka
 
@@ -74,4 +74,4 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=template
+      - POSTGRES_DB=cryptocurrency

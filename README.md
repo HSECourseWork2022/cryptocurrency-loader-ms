@@ -22,8 +22,8 @@ Ready to kick-start loader microservice template
       3. `SPRING_DATASOURCE_URL` to your JDBC-ish url (don't forget about postgres in the bottom of compose, you may or may not turn it off)
       4. `SPRING_DATASOURCE_USERNAME`
       5. `SPRING_DATASOURCE_PASSWORD`
-7. Make your repositories in `dev.hse.template.repository` package
-8. Make your entities in `dev.hse.template.pojo.entity` package
+7. Make your repositories in `dev.hse.loader.repository` package
+8. Make your entities in `dev.hse.loader.pojo.entity` package
 
 # How to run
 
