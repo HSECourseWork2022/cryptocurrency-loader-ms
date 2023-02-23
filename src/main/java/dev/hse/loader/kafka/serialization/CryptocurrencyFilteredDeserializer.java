@@ -8,7 +8,7 @@ import org.apache.kafka.common.serialization.Deserializer;
 
 import java.io.IOException;
 
-@Slf4j(topic = "[loader][template][kafka-deserializer]")
+@Slf4j(topic = "[loader][cryptocurrency][kafka-deserializer]")
 public class CryptocurrencyFilteredDeserializer implements Deserializer<CryptocurrencyFiltered> {
 
     private final JsonMapper mapper = JsonMapperUtils.getJsonMapper();
