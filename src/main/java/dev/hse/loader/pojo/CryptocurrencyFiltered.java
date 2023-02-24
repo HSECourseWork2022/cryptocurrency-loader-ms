@@ -17,7 +17,7 @@ public class CryptocurrencyFiltered {
     @JsonProperty("vendor")
     Long vendor;
     @JsonProperty("observed_at")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "UTC+3")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     LocalDateTime observedAt;
     @JsonProperty("max_supply")
     Long maxSupply;
